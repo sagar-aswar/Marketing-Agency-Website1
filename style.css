@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;600;800&display=swap');
+
+/* Basic CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Display', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+header::before {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: url(https://web-static.wrike.com/blog/content/uploads/2015/12/How-To-Run-Effective-Meetings-1.jpg?av=2ba167f367f262543a99f5e251e14dd0) no-repeat top center/cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+nav {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    padding-top: 1.5rem;
+    /* flex-wrap: wrap; */
+}
+
+nav box-icon {
+    display: none;
+}
+
+nav h1 {
+    font-size: 2.5rem;
+    color: #4caf50;
+    cursor: pointer;
+    transition: all 0.25s;
+    letter-spacing: 0.25rem;
+}
+
+nav h1:hover {
+    transform: scale(1.25);
+    padding-left: 1.25em;
+}
+
+nav ul {
+    list-style: none;
+    /* display: flex; */
+}
+
+nav ul li {
+    margin-left: 2.25rem;
+    display: inline-block;
+}
+
+nav ul li a {
+    font-size: 1.25rem;
+    color: whitesmoke;
+}
+
+nav ul li a::after {
+    content: "";
+    height: 3px;
+    width: 0%;
+    margin-top: 2.5px;
+    display: block;
+    background-color: #4caf50;
+    border-radius: 5px;
+    transition: all 0.25s;
+}
+
+nav ul li a:hover {
+    color: rgba(245, 245, 245, 0.751);
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-content {
+    color: whitesmoke;
+    width: 50%;
+    position: relative;
+    top: 20%;
+    left: 5%;
+}
+
+.header-content h2 {
+    font-size: 2.5rem;
+    padding-bottom: 3%;
+}
+
+.header-content p {
+    font-size: 1rem;
+    padding-bottom: 1%;
+    margin-bottom: 1.5%;
+    font-weight: 600;
+    /* width: 75%; */
+}
+
+form input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    width: 50%;
+    margin: 1.25% 0;
+    padding: 1.5%;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.btn {
+    color: whitesmoke;
+    background-color: #4caf50;
+    border: none;
+    margin: 1% 0;
+    padding: 1.25%;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.btn:hover {
+    color: rgba(245, 245, 245, 0.76);
+    background-color: #4ca8af;
+    transform: scale(1.05);
+}
+
+form button {
+    width: 50%;
+}
+
+.about {
+    height: 75vh;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about h3 {
+    font-size: 1.5rem;
+}
+
+.box {
+    width: 30%;
+    padding: 5% 20px;
+}
+
+#pic h3 {
+    /* margin-top: 10%; */
+    padding-bottom: 7..5%;
+    margin-bottom: 7.5%;
+}
+
+#pic img {
+    border-radius: 10px;
+    height: 60%;
+}
+
+#history h3,
+#vision h3 {
+    margin-bottom: 15%;
+}
+
+#history p,
+#vision p {
+    margin-bottom: 5%;
+    font-weight: 600;
+}
+
+.about .btn {
+    margin-top: 5%;
+    font-size: 0.85rem;
+    padding: 2% 4%;
+}
+
+
+/* Section 2 */
+
+.About_Us {
+    height: 75vh;
+    width: 100vw;
+    color: whitesmoke;
+    display: flex;
+}
+
+.left {
+    padding: 6%;
+}
+
+.left h3 {
+    padding-bottom: 3%;
+}
+
+.left h2 {
+    font-size: 2rem;
+}
+
+.left p {
+    margin: 3% 0;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.top {
+    display: flex;
+}
+
+.dev {
+    color: black;
+    background-color: rgb(221, 216, 216);
+    width: 240px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3%;
+    font-weight: 800;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.process {
+    height: 75vh;
+    background-color: white;
+    padding-top: 4.5%;
+}
+
+.process h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2.5% 0;
+}
+
+.line {
+    display: block;
+    width: 65%;
+    height: 2px;
+    background-color: black;
+    margin: 3% auto;
+    border-radius: 5px;
+}
+
+.circles {
+    width: 60%;
+    margin: -3.5% auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7.5%;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.semi-headings {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    margin: -6.5% auto;
+    padding-bottom: 7.5%;
+}
+
+.semi-heading {
+    color: #4caf50;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.paragraph {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.para1 {
+    text-align: left;
+}
+
+.para2 {
+    text-align: center;
+}
+
+.para3 {
+    text-align: right;
+}
+
+.testimonial {
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimony h2 {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2.5%;
+}
+
+.test {
+    background-color: rgba(255, 255, 255, 0.288);
+    color: white;
+    width: 40vw;
+    height: 45vh;
+    margin: 0.75%;
+    padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.test_img {
+    width: 10%;
+    clip-path: circle(40% at 50% 50%);
+}
+
+.test p {
+    font-weight: 600;
+}
+
+.star {
+    padding: 2% 0;
+}
+
+.contact {
+    height: 75vh;
+    background-color: white;
+    color: black;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2% 0;
+}
+
+.form2 {
+    width: 50%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2.5%; */
+    margin: 0 auto;
+}
+
+.form2 button {
+    width: 75%;
+    padding: 2% 1%;
+    margin-top: 2.5%;
+}
+
+#form2 {
+    border: 1px solid rgb(110, 106, 106);
+    width: 75%;
+    padding: 1%;
+}
+
+footer {
+    height: 25vh;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2% 0;
+}
+
+footer h3,
+h4 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.social {
+    width: 30%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 2% auto;
+}
+
+#go_up {
+    background-color: #4caf50;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+#Back_to_top {
+    font-size: 1.5rem;
+    position: fixed;
+    left: 94vw;
+    bottom: 5vh;
+    background-color: #4caf50;
+    color: whitesmoke;
+    padding: 0.45rem;
+    border-radius: 50%;
+    transition: all 0.25s;
+}
+
+#Back_to_top:hover {
+    transform: scale(1.2);
+}
+
+.fa {
+    color: whitesmoke;
+    transition: all 0.25s;
+}
+
+.sm:hover {
+    transform: scale(1.5);
+}
+
+
+/* Media Queries */
+
+@media all and (max-width:1000px) {}
+
+@media all and (max-width:768px) {
+    nav {
+        flex-direction: column;
+        /* align-items: flex-start; */
+    }
+    nav box-icon {
+        display: block;
+    }
+    .showmenu {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        background-color: whitesmoke;
+        width: 100%;
+        border-radius: 7.5px;
+    }
+    nav ul li {
+        display: block;
+        margin: 2% 0;
+        text-align: center;
+    }
+    nav ul li a {
+        margin: auto;
+        color: black;
+        font-size: 0.95em;
+    }
+    nav ul li a:active {
+        color: black;
+    }
+    header {
+        height: 120vh;
+    }
+    header::before {
+        content: "";
+        height: 120vh;
+    }
+    .header-content {
+        width: 90%;
+        position: relative;
+        top: 5%;
+    }
+    .header-content h2 {
+        font-size: 1.5rem;
+        padding-bottom: 4%;
+        text-align: center;
+    }
+    .header-content p {
+        font-size: 0.85rem;
+        padding-bottom: 1%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        text-align: center;
+    }
+    form input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        font-size: 0.85rem;
+    }
+    .btn {
+        font-size: 0.85rem;
+    }
+    form .btn {
+        width: 100%;
+        font-size: 0.85rem;
+        margin: 5% 0;
+    }
+    .about {
+        height: 170vh;
+    }
+    .box {
+        width: 100%;
+        padding: 0 5%;
+    }
+    .about h3 {
+        font-size: 1.5rem;
+    }
+    #pic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #pic h3 {
+        margin: 3% 0;
+        font-size: 1.25rem;
+    }
+    #pic img {
+        width: 80%;
+        height: 60%;
+    }
+    #history h3,
+    #vision h3 {
+        margin: 3% 0;
+        text-align: center;
+    }
+    #history p,
+    #vision p {
+        margin-bottom: 1%;
+        font-weight: 600;
+        /* text-align: center; */
+    }
+    .about .btn {
+        margin-top: 5%;
+        padding: 3% 5%;
+        display: block;
+        margin: auto;
+    }
+    /* Section 2 */
+    .About_Us {
+        height: 230vh;
+        flex-direction: column;
+    }
+    .left {
+        /* padding: 6%; */
+        margin: auto;
+    }
+    .left h3,
+    .left h2,
+    .left p {
+        text-align: center;
+    }
+    .right {
+        flex-direction: column;
+        /* padding: 5%;     */
+    }
+    .top {
+        flex-direction: column;
+        margin: auto;
+    }
+    .process {
+        height: 75vh;
+        background-color: white;
+        padding-top: 4.5%;
+    }
+    .process h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 5% 0;
+    }
+    .line {
+        display: none;
+    }
+    .circles {
+        display: none;
+    }
+    .semi-heading {
+        display: none;
+    }
+    .paragraph {
+        width: 65%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: 0.75rem;
+    }
+    .para1 {
+        text-align: center;
+        padding-top: 5%;
+    }
+    .para2 {
+        text-align: center;
+        padding: 10% 0;
+    }
+    .para3 {
+        text-align: center;
+        padding: 10% 0;
+    }
+    .testimonial {
+        height: 100vh;
+        flex-direction: column;
+    }
+    .test {
+        width: 65vw;
+        margin: 1%;
+    }
+    .contact {
+        height: 75vh;
+        background-color: white;
+        color: black;
+    }
+    .contact h2 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 2% 0;
+    }
+    .form2 {
+        width: 75%;
+    }
+    .social {
+        width: 50%;
+        align-items: center;
+    }
+    #Back_to_top {
+        position: fixed;
+        left: 90vw;
+    }
+}
